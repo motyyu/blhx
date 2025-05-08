@@ -11,7 +11,7 @@ extract_android_link() {
 download_azurlane () {
     if [ ! -f "AzurLane.apk" ]; then
     # 下载游戏apk的地址,我找不到一个固定的链接,理论上每次更新客户端都要手动改地址
-    # url="https://pkg.biligame.com/games/blhx_8.2.1_0820_1_20240830_041443_51682.apk"
+    # url="https://pkg.biligame.com/games/blhx_9.5.11_0427_1_20250506_095207_d4e3f.apk"
     url=$(extract_android_link)
     # 使用wget命令下载apk文件
     axel -n 16 -k -o blhx.apk $url
